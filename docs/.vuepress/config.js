@@ -20,7 +20,7 @@ module.exports = {
                    ['/about/AboutWhyEBA','Why EBA?']
                  ]
                },
-               { title: 'Guides',
+               { title: 'Programming',
                  children:[
                    ['/guide/LandingPage','Programming EBA'],
                    ['/getting-started/GettingStarted','Getting Started'],
@@ -43,18 +43,18 @@ module.exports = {
                    ]
                },
                
-               { title: 'Connectors',
+               { title: 'Integrations',
                  children:[
-                   ['/connectors/','Connectors']
+                   ['/integrations/','Integrations']
                  ]
                }
               ],
     
     nav: [
       { text: 'About', link: '/about/' },
-      { text: 'Guides', link: '/guide/' },
-      { text: 'Reference', link: '/reference/index.md' },
-      { text: 'Connectors', link: '/connectors/' },
+      { text: 'Programming', link: '/guide/' },
+      { text: 'Development Lab', link: '/lab/' },
+      { text: 'Integrations', link: '/integrations/' },
       {
         text: 'Languages',
         items: [
