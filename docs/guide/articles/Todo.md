@@ -10,6 +10,7 @@
   * Samples
 
 * Findings: There is lots of good documentation here that we have surfaced that was quite unfindable before.  One can now get a sense of the scope of EBA and what is need to learn how to build efficient and effective agents.
+* Test all links
 * Review all documentation with product
 * Canonicalize labels for the lab, the paradigm, the agents.
 * Update the docs to reflect these labels
