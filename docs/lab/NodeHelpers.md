@@ -1,4 +1,4 @@
-## Node helpers
+# Node helpers
 
 A nodejs action within EBA can import the package "eba" which includes a variety of utility methods for working within the Assistant framework.
 
@@ -14,7 +14,7 @@ A nodejs action within EBA can import the package "eba" which includes a variety
 - [Natural Language Understanding](#natural-language-understanding)
 - [Use in external actions](#use-in-external-actions)
 
-### Input
+## Input
 
 `Params` is used to interact with the parameters within your action. You can initialize an instance by passing in the input params of your main function:
 
@@ -41,7 +41,7 @@ module.exports.main = async function(params) {
 
 You can also get a concept name given a parameter name using `getName(paramName)` method. It can be useful if you semantic action takes polymorphic input parameters and you need to know the exact concept name at the execution time.
 
-### Output
+## Output
 
 `Result` is a convenience class for providing an appropriate response to EBA. It contains methods to set data for the output nodes of your semantic action. Instances are typically created using an empty constructor.
 
@@ -62,7 +62,7 @@ Using the `Result` object you can also change name, type and tags of the output 
 * `setType(paramName, type)`     -- sets type of the node for paramName as type
 * `addTags(paramName, ..tags)`   -- sets tags of the node for paramName as tags
 
-### Lazy Evaluation
+## Lazy Evaluation
 
 EBA supports lazy evaluations to reduce data footprint when executing semantic actions. Lazy evaluations are especially important in OpenWhisk actions as OpenWhisk has limitations for input/output data. The input and output data of a semantic action may contain lazy values. `Params` helper is designed to recognize and handle lazy values properly. If you use `get()` method it will force the lazy data for you. However if you need to keep the data lazy (for example to perform another lazy operations on top of the data) you should use `getLazy()` method instead. Lazy value has the following methods:
 
@@ -122,7 +122,7 @@ module.exports.main = async function(params) {
 }
 ```
 
-### Ontology
+## Ontology
 
 To query the ontology you can use `query()` method of `Params` object. This method takes query string. The syntax of ontology query as the same as the one in semantic action constraints:
 
@@ -139,7 +139,7 @@ The method returns a list of possible matches where each item is a map of the po
 
 Note: `query()` method is asynchronous and should be handled using either Promises or async/await.
 
-### Short Term Memory
+## Short Term Memory
 
 Short-term memory is aimed to store and reuse data within a session. To save the data into short-term memory the `store()` method of `Result` object. This method takes string key and JSON value:
 
@@ -159,7 +159,7 @@ module.exports.main = function(params) {
 }
 ```
 
-### Long Term Memory
+## Long Term Memory
 
 Long-term memory allows you data to survive between sessions. To load and save the data the corresponding methods of `Params` object may be used:
 
@@ -168,7 +168,7 @@ Long-term memory allows you data to survive between sessions. To load and save t
 
 Note that both methods are asynchronous.
 
-### Natural Language Generation
+## Natural Language Generation
 
 EBA can generate natural language automatically based on signature of the semantic actions. However the semantic actions interface allows developers to provide their own natural language representation. The Natural Language Generator takes natural language token associated with a data node (represented as `NLToken` object) and produces the natural text. In semantic action you can return `NLToken` for the output node using `setMeta()` method of `Result` object. `NLToken` objects can be combined so you can take the `NLToken` from the input nodes and combine them:
 
@@ -183,14 +183,14 @@ module.exports.main = function(params) {
 }
 ```
 
-### Natural Language Understanding
+## Natural Language Understanding
 
 * `makeAnnotation(conceptName, confidence)`             -- creates an annotation with concept and confidence
 * `insertAnnotation({token, annotations}, conceptName)` -- inserts an annotation into supplied annotations
 * `mapTree(tree, f)`                                    -- applies `f` to each element in the tree
 * `reduceTree(tree, f, acc)`                            -- reduces values to an accumulator after applying `f` recursively.
 
-### Use in external actions
+## Use in external actions
 
 To use EBA helpers in external actions add eba-agent module as a dependency:
 

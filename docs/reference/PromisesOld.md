@@ -1,8 +1,8 @@
-## Promises
+# Promises
 
 As described in our [action component](./Actions.md), EBA supports a parameter type called `promise`, which enables data to be produced for an action only once some prelimenrary data is first acquired. This is typically accomplished by the use of follow up questions in a dialog series. For a live example of this feature, you may try out our [Weather agent](https://eba.ibm.com/assistant#/lab/agents/weather/actions). In this article, we will walk you through the steps of implementing a few promise dialogs, using our Weather agent as a reference. 
 
-### Asking for follow-up information
+## Asking for follow-up information
 
 Let's say that you have a business entity which requires, as a necessary condition in order to fetch the entity, another data element(s). In our case, this is `weather:Weather` which requires both a city as well as a timeframe.
 
@@ -31,7 +31,7 @@ Note that more complex cases can be modeled, e.g. our `weather:Forecast` require
  
 You will find that the body of such actions all follow the similar pattern described above, viz. rename to `:Question` with supplied NL question.
 
-### Generating data
+## Generating data
 
 
 With a `promise` node in place, our system will attempt to resolve it, i.e. to convert it to a `data` node, whenever it is suitable. To enable such behavior, we should implement an additional action to produce real data. Of course, this action will contain as input all concepts required to resolve the entity at hand. In the case of weather, we have an action as `weather:Forecast`, we have an action `weather:Forecast (optional :Relation (data city), optional :Relation (data :Timeframe)) -> data weather:Forecast`. Note that this action requires both city and timeframe data and the output produces `data weather:Forecast`, meaning that it can provide the data which the user initially requested. The body of this action will use the supplied input to perform any api calls necessary. All actions for the weather agent as viewable to our users. Feel free to take a look and explore this feature in your own implementations.

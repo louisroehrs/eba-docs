@@ -1,11 +1,13 @@
-# Modeling your Business
+# Semantic Programming Reference
 
 This document covers each of the core components that constitute a skill. It is important to note that EBA follows an ontology based paradigm, meaning that it derives understanding about the world based on a relationship of concepts. This is in contrast to most other systems which are intent based and depend on predicate logic.
 
 ## Ontology
 At a high level, EBA is composed of an ontology of [concepts](#concepts)  and [attributes](#attribute) that it is able to recognize and reason about. Natural language [patterns](Patterns.md) help the assistant to perform natural language understanding, linking language tokens to appropriate concepts. In the process of reasoning about a question, the system considers all possible outcomes it can take given a set of [actions](./Actions.md) and [rules](./Rules.md), ultimately selecting the best one or asking for user disambiguation in cases where it is fitting. You can learn more about each of these components as well as a few of our [core concepts](#core-concepts).
 
-
+::: warning
+Add a bit about agents (its always the obvious element that gets left out of discussion...) because it shows up in core concepts
+:::
 
 
 
@@ -60,7 +62,7 @@ For every attribute EBA automatically generates all the neccessary components (c
 
 You can share attribute concepts among different business entities if necessary. For example you can define the attribute `example:Address` and then make it as an attribute of both `example:Customer` and `example:Supplier`. EBA will generate two auxiliary concepts to distinguish these attributes: `attr:CustomerAddress` and `attr:SupplierAddress`.
 
-### Core Concepts
+## Core built-in concepts
 
 EBA is an ecosystem of domain specific agents. In order to encapsulate and expose common functionality across our system, EBA contains a set of prebuiilt native agents. These agents, like any other agents, implement a set of concepts which can be utilized and extended by other agents within the ecosystem. In this article, we aim to highlight the key set of concepts which developers may want to familarize themselves with in order to better understand the generic functionalities they have available. The catalog below is not meant to be exhaustive, and, as with all our agents, you can view their further details within our dev lab at eba.ibm.com.
 
@@ -74,7 +76,7 @@ EBA is an ecosystem of domain specific agents. In order to encapsulate and expos
 
 
 
-#### User interface concepts     [:arrow_up:](#core-concepts) 
+### User interface concepts
 
 Concepts which represent a high level interface for capturing the role of your concept, e.g. a textual message or a showable data element.
 
@@ -82,7 +84,7 @@ Concepts which represent a high level interface for capturing the role of your c
 
 - `:Showable` -- any subclass will be treated as a showable entity. This entity can be visualized using our standard assets and displayed to the user in our chat, graph, and content views. If a entity is not `:Showable`, then it will not recieve a high score when used in conjunction with `:ActionShow`. 
 
-#### Action concepts  [:arrow_up:](#core-concepts) 
+### Action concepts
 
 All action concepts are a subclass of `:Message` as they reprsent operations by the machine which require user interaction, e.g. show data elements or remove data elements will produce the appropriate message to the user. The following concepts are analogous to CRUD operations, all which are supported by our system.
 
@@ -94,7 +96,7 @@ All action concepts are a subclass of `:Message` as they reprsent operations by 
 
 - `:ActionDelete` -- concept which represents a user's request to have data removed. It will remove data and produce a textual response to the user.
 
-#### Primitive data concepts [:arrow_up:](#core-concepts) 
+### Primitive data concepts
 
 These concepts represent the basic types of data which our system provides OOB.
 
@@ -103,7 +105,7 @@ These concepts represent the basic types of data which our system provides OOB.
 - `:Timeframe`  -- a timeframe element containing information such as the start and end of the timeframe as well as its level of grainularity.
 - `:FreeText`   -- textual input form user's question which is not consumed by any other actions within a particular variant. This concept can be useful in cases where more free-formed input is expected.
 
-#### Conditional concepts [:arrow_up:](#core-concepts) 
+### Conditional concepts
 
 - `:Contains`    -- condition which signifies that source value contains target value.
 - `:StartsWith`  -- condition which signifies that source value starts with target value.
@@ -113,7 +115,7 @@ These concepts represent the basic types of data which our system provides OOB.
 - `:LessThan`    -- condition which signifies that source value is less than target value.
 - `:Equivalent`  -- condition which signifies that source value is strictly equal to the target value.
 
-#### Aggregation concepts [:arrow_up:](#core-concepts) 
+### Aggregation concepts
 
 These concepts represent aggregration and modifier operations on top of collections. Typically these concepts will be used in conjunction with certain predicates and collections, e.g. `:SortedBy(:Quantity, :SalesOrders)`.
 
@@ -131,7 +133,7 @@ These concepts represent aggregration and modifier operations on top of collecti
 - `:MinimumBy` -- get the minimum element by a particular predicate within a colleciton
 - `:MaximumBy` -- get the maximum element by a particular predicate within a colleciton
 
-#### Qualifier concepts [:arrow_up:](#core-concepts) 
+### Qualifier concepts
 
 These concepts represent certain language qualifiers for designated entities. Often times these qualifiers can be ommitted in natural language, and, consequently, they are often denoted as `optional` when used within semantic actions.
 
@@ -141,7 +143,7 @@ These concepts represent certain language qualifiers for designated entities. Of
 - `:All`      -- qualifier which explictly denotes that all entities should be qualified, e.g. 'show me _all_ sales orders'. 
 - `:Own`      -- qualifier which explictly denotes entities belonging to the user, e.g. 'show me _my_ contacts'.
 
-#### NLG Concepts [:arrow_up:](#core-concepts) 
+### NLG Concepts
 
 These concepts pertain to extending custom NLG capabilties. 
 

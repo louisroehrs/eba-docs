@@ -12,4 +12,12 @@ The development lab is organized into a [control bar](./ControlBar.md) and the f
 * [Assets](./Assets.md)
 * [Explore](./Explore.md)
 * [Debug](./Debug.md)
+* [Training](./Training.md)
 * [Source Control](./SourceControl.md)
+
+
+Tools and helper libraries are provided to help you build code for use in actions and assets.
+
+* Action Helpers
+* NodeJS Library Support Information
+* Agent API for controlling the agent directly

@@ -1,0 +1,43 @@
+</!DOCTYPE html>
+<html>
+<head>
+    <title>Host Application</title>
+    <script src="https://eba.ibm.com/static/assistant.js"></script>
+    <script>
+        IBM_EBA.setup({
+            disable_button: false,
+            disable_shadow: true
+        })
+    </script>
+</head>
+<body>
+    <h1>Host application</h1>
+    <p>Below are few button controls to illustrate the IBM_EBA api</p>
+    <p>
+        <label>Popup window</label>
+        <button onclick='javascript:IBM_EBA.open()'>Show</button>
+        <button onclick='javascript:IBM_EBA.close()'>Hide</button>
+        <button onclick='javascript:IBM_EBA.toggle()'>Toogle</button>
+        <button onclick='javascript:IBM_EBA.detach()'>Detach</button>
+    </p>
+    <p>
+        <label>Floating button</label>
+        <button onclick='javascript:IBM_EBA.setup({disable_button:false})'>Enable</button>
+        <button onclick='javascript:IBM_EBA.setup({disable_button:true})'>Disable</button>
+    </p>
+    <p>
+        <label>Modal shadow</label>
+        <button onclick='javascript:IBM_EBA.setup({disable_shadow:false})'>Enable</button>
+        <button onclick='javascript:IBM_EBA.setup({disable_shadow:true})'>Disable</button>
+    </p>
+    <p>
+        <label>Send custom event to EBA</label>
+        <button onclick="javascript:IBM_EBA.send({
+            order_meta: {
+                order_id: 5678,
+                order_name: 'Paper',
+                customer: 1234
+            }})">Send</button>
+    </p>
+</body>
+</html>
