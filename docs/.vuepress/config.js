@@ -6,9 +6,11 @@ module.exports = {
       }
     }
   },
+  base: "/eba-docs/",
   title: 'EBA',
   description: 'Ask, get answers, and automate in the language of your business.',
   themeConfig: {
+    product: { name:"EBA"},
     displayAllHeaders:true,
     sidebarDepth:2,
     sidebar : ['/',
@@ -18,18 +20,30 @@ module.exports = {
                    ['/about/AboutWhyEBA','Why EBA?']
                  ]
                },
-               { title: 'Guide',
+               { title: 'Guides',
                  children:[
-                   ['/guide/','Guides']
-                   ]
+                   ['/guide/LandingPage','Programming EBA'],
+                   ['/getting-started/GettingStarted','Getting Started'],
+                   ['/components/Components','Modeling your Business']
+                 ]
                },
-               { title: 'Reference',
+               { title: 'Development Lab',
                  children:[
-                   ['/reference/','Reference']
+                   ['/lab/Overview','Lab Overview'],
+                   ['/lab/General','General Tab'],
+                   ['/lab/ControlBar','Control Bar'],
+                   ['/lab/Concepts','Concepts Tab'],
+                   ['/lab/Patterns','Patterns Tab'],
+                   ['/lab/Actions','Actions Tab'],
+                   ['/lab/Rules','Rules Tab'],
+                   ['/lab/Assets','Assets Tab'],
+                   ['/lab/Explore','Explore Tab'],
+                   ['/lab/Debug','Debug Tab'],
+                   ['/lab/SourceControl','Github Tab'],
                    ]
                },
                
-               { title: 'Reference',
+               { title: 'Connectors',
                  children:[
                    ['/connectors/','Connectors']
                  ]
