@@ -10,3 +10,6 @@ docs/.vuepress/dist
 
 #macos
 .DS_Store
+
+#sample agents do not need to replicate for fear of remerge issues
+*.yaml

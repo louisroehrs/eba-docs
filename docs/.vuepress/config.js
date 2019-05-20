@@ -17,15 +17,16 @@ module.exports = {
                { title: 'About',
                  children:[
                    ['/about/','This is EBA'],
-                   ['/about/AboutWhyEBA','Why EBA?']
+                   ['/about/AboutWhyEBA','Why EBA?'],
+                   ['/about/Features','Features']
                  ]
                },
                { title: 'Programming',
                  children:[
                    ['/guide/LandingPage','Programming EBA'],
                    ['/getting-started/GettingStarted','Start with our tutorial'],
-                   ['/reference/Reference','Semantic programming reference'],
-                   ['/samples/Samples','Samples']
+                   ['/reference/Reference','Programming reference'],
+                   ['/samples/Samples','Examples']
                  ]
                },
                { title: 'Development Lab',
@@ -77,6 +78,7 @@ module.exports = {
       { text: 'Programming', link: '/guide/LandingPage' },
       { text: 'Development Lab', link: '/lab/Overview' },
       { text: 'Integrations', link: '/integrations/Integrations' },
+      { text: 'Articles', link: '/articles/Integrations' },
       {
         text: 'Languages',
         items: [
