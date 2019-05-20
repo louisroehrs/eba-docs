@@ -1,4 +1,4 @@
-# Walmart Sample
+# Walmart example
 
 This sample uses the Walmart API to build an agent interface for inpsecting their products.
 
