@@ -66,11 +66,11 @@ module.exports = {
                },
                { title: 'Integrations',
                  children:[
-                   ['/integrations/Integrations','Overview'],
-                   ['/integrations/Web','Web'],
-                   ['/integrations/Headless','Headless'],
-                   ['/integrations/Mobile','Mobile'],
-                   ['/integrations/Voices','Voices']
+                   ['/integration/Integrations','Overview'],
+                   ['/integration/Web','Web'],
+                   ['/integration/Headless','Headless'],
+                   ['/integration/Mobile','Mobile'],
+                   ['/integration/Voices','Voices']
                  ]
                },
                { title: 'Articles',
@@ -95,7 +95,6 @@ module.exports = {
           { text: 'Add to Slack', link: 'https://slack.com/oauth/authorize?client_id=14390917878.401235455793&scope=bot,users.profile:read&redirect_uri=https%3a%2f%2feba.ibm.com%2fslack%2foauth' }
         ]
       },
-      { text: 'Github', link: 'https://github.com/louisroehrs/eba-docs' },
       { text: 'Github', link: 'https://github.com/louisroehrs/eba-docs' },
     ]
   }
