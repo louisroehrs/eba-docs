@@ -33,7 +33,7 @@ An ontology in EBA represents a set of concepts and a set of relationships betwe
 
 After asking the assistant a question, hover over your question to see an information icon appear in the top right portion of the message. Clicking this icon will reveal a tokenized representation of your original question. This tokenized representation will contain a part of speech (PoS) breakdown of the questions along with the concept annotations selected by the assistant. 
 
-![syntatic-parsing.png](../../assets/img/syntatic-parsing.png#zoom=50%)
+![syntatic-parsing.png](../assets/img/syntatic-parsing.png#zoom=50%)
 
 In the tree above, you find a topological breakdown of a user's question, including the lemmas, part of speech, and dependency relationship of each token. It is important to consider that this tree serves as a starting point for the rest of the reasoning process and that EBA is sensitive to the features of this tree. A side effect of this is that EBA does not recognize concepts on a keyword basis, but rather it considers the context in which the word is used. Consider the following distinct usages of the word 'weather' in the sentences 'how is the weather?' and 'can we weather the storm'. The keyword 'weather' is used differently in each sentence, and EBA is intelligent enough to distinguish each instance. Annotations, which developers supply via NL patterns, are introduced into the syntax tree only in cases where their respective topologies match.
 
@@ -61,7 +61,7 @@ Based on the existing conceptual knowledge derived from the syntax and annotatio
 
 After the assistant responds to your question, you will be able to view an outline of its reasoning in the information space. Select the graph icon in the top right corner of the content tab to view the information space. The information space is represented as a set of nodes and links which contain drill-down information. Each question begins with a question node and is linked to other nodes which represent your original question. These nodes are subsequently linked to concept nodes (solid-filled colors) and data nodes (white-filled colors). Concept nodes reveal the concepts associated with your tokens while data nodes contain the raw data the assistant associated with their respective concept. Data is gathered after executing actions. From this view, you can inspect the annotations, links, actions, and data selected and produced by the assistant for each question.
 
-![information-space.png](../../assets/img/information-space.png#zoom=50%)
+![information-space.png](../assets/img/information-space.png#zoom=50%)
 
 *Common Bugs*: If you notice an unsatisfying result from the assistant, you should first ensure that data nodes were actually generated for your domain concepts. Furthermore, you should ensure that the data returned from your assistant is correct. If your question does not contain data nodes, it is likely due to an invalid configuration within the assistant, e.g. undeclared patterns, invalid action signatures, invalid ontology, etc. If you have data nodes, but the data is incorrect, the problem lies within the action that produced this data. Consult the Debug Tab within our lab to inspect the action itself. If you have both data nodes and the correct data, then the issue likely lies in showability. Ensure that your domain entity is showable by subclassing it from the `:Showable` concept within the ontology tab or else ensure that your frontend visualization assets correctly render your data. 
 
@@ -73,11 +73,11 @@ The information space also contains a set of auxiliary nodes, viz. token, meta, 
 
 To bring alternative understandings into the information space, simply asking your question and append `||debug` to the end of it, e.g. `"show me all invoices||debug"`. 
 
-![alternative-intrepretations.png](../../assets/img/alternative-intrepretations.png#zoom=50%)
+![alternative-intrepretations.png](../assets/img/alternative-intrepretations.png#zoom=50%)
 
 The information space will also now display all alternative variants. As a fair warning, the assistant is able to reason about many thousands of alternatives at a time, so this view can become too large for more complex questions. In order to view one particular path in isolation, you should double click the `message` node associated with that variant. Double clicking will highlight this specific variant path and hide the remaining paths for easier introspection.
 
-![alternative-path.png](../../assets/img/alternative-path.png#zoom=50%)
+![alternative-path.png](../assets/img/alternative-path.png#zoom=50%)
 
 #### Debug tab
 
