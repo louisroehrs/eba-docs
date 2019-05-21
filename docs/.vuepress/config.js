@@ -99,6 +99,7 @@ module.exports = {
     nav: [
       { text: 'About', link: '/about/' },
       { text: 'Documentation', link: '/guide/LandingPage' },
+      { text: 'Release Notes', link: '/release/ReleaseNotes' },
       {
         text: 'Use it now',
         items: [
@@ -106,8 +107,7 @@ module.exports = {
           { text: 'Download as App', link: 'https://ibm.box.com/shared/static/m7wm02x2qdevpacf2u1ugj6koapr37ta.dmg' },
           { text: 'Add to Slack', link: 'https://slack.com/oauth/authorize?client_id=14390917878.401235455793&scope=bot,users.profile:read&redirect_uri=https%3a%2f%2feba.ibm.com%2fslack%2foauth' }
         ]
-      },
-      { text: 'Release Notes', link: '/release/ReleaseNotes' },
+      }
     ]
   }
 }

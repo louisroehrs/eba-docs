@@ -1,15 +1,23 @@
+/* hide auto-gened github link in menu bar, but keep in pages. */
+a.repo-link {
+  display:none;
+  color:transparent
+}
+
+
+// Style nice search box
 .navbar, .header, .search-box {
   background-color: #3277D7;
   color:white
 }
 
+/* Style nice use it now dropdown */
 .nav-dropdown, .navbar .links {
   background-color: #3277D7;
 }
 
 .dropdown-wrapper:hover .nav-dropdown {
   background-color: #3277D7;
-
 }
 
 .dropdown-wrapper .nav-dropdown .dropdown-item a:hover 
@@ -18,12 +26,14 @@
   background-color: #3255D7;  
 } 
 
+/* Style nice top nav menus */
 .nav-item > a:not(.external):hover, .nav-item > a:not(.external).router-link-active {
   border-bottom-color:white;
   color: #eee;
   background-color:  #3679d4;
 }
 
+/* Show me where I am in all this documentation */
 a.sidebar-link.active {
   border-left-width:4px;
   background-color: #eee;
@@ -32,6 +42,7 @@ a.sidebar-link.active {
 a.sidebar-link {
 
 }
+
 a.sidebar-sub-header {
   background-color: #eee;
 }
@@ -40,6 +51,7 @@ a.sidebar-sub-header {
   color:white!important;
 }
 
+/* Put that github link on the right side of the page bottoms. */
 .page-edit {
   text-align:right;
 }
