@@ -27,7 +27,7 @@ module.exports = {
       { title: 'About',
         children:[
           ['/about/','This is EBA'],
-          ['/about/AboutWhyEBA','Why EBA?'],
+          ['/about/About','Why EBA?'],
           ['/about/Features','Features'],
         ]
       },
@@ -52,8 +52,9 @@ module.exports = {
           ['/lab/Debug','Debug tab'],
           ['/lab/Training','Training tab'],
           ['/lab/SourceControl','Github tab'],
-          ['/lab/NodeHelpers','Action helpers'],
-          ['/lab/UIComponents','Action UI components'], 
+          ['/lab/NodeHelpers','Node helpers'],
+          ['/lab/assets/Frontend.md','Frontend'],
+          ['/lab/UIComponents','Frontend UI components'], 
           ['/lab/NodeModules','NodeJS support'],
           ['/lab/ExternalRuntime','External runtime'],
           ['/lab/BlackboxRuntime','Blackbox runtime'],
