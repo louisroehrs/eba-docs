@@ -1,0 +1,2460 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>IBM Embedded Business AI Framework</title>
+    <meta name="description" content="Ask, get answers, and automate in the language of your business.">
+    
+    
+    <link rel="preload" href="/eba-docs/assets/css/0.styles.a050cb89.css" as="style"><link rel="preload" href="/eba-docs/assets/js/app.3403747c.js" as="script"><link rel="preload" href="/eba-docs/assets/js/29.2afef2db.js" as="script"><link rel="prefetch" href="/eba-docs/assets/js/10.a32de72a.js"><link rel="prefetch" href="/eba-docs/assets/js/11.7044a9ed.js"><link rel="prefetch" href="/eba-docs/assets/js/12.d7473428.js"><link rel="prefetch" href="/eba-docs/assets/js/13.169b8d24.js"><link rel="prefetch" href="/eba-docs/assets/js/14.b0b51c99.js"><link rel="prefetch" href="/eba-docs/assets/js/15.9cd811bd.js"><link rel="prefetch" href="/eba-docs/assets/js/16.f04cedd8.js"><link rel="prefetch" href="/eba-docs/assets/js/17.53a4311b.js"><link rel="prefetch" href="/eba-docs/assets/js/18.4be7aa54.js"><link rel="prefetch" href="/eba-docs/assets/js/19.43a4c087.js"><link rel="prefetch" href="/eba-docs/assets/js/2.9ead8820.js"><link rel="prefetch" href="/eba-docs/assets/js/20.2339fd9b.js"><link rel="prefetch" href="/eba-docs/assets/js/21.3f6d0150.js"><link rel="prefetch" href="/eba-docs/assets/js/22.dbc8515d.js"><link rel="prefetch" href="/eba-docs/assets/js/23.01e88cbf.js"><link rel="prefetch" href="/eba-docs/assets/js/24.9ce21ebf.js"><link rel="prefetch" href="/eba-docs/assets/js/25.fac08eed.js"><link rel="prefetch" href="/eba-docs/assets/js/26.51bd2028.js"><link rel="prefetch" href="/eba-docs/assets/js/27.9b14d585.js"><link rel="prefetch" href="/eba-docs/assets/js/28.6d8a0e25.js"><link rel="prefetch" href="/eba-docs/assets/js/3.37272d66.js"><link rel="prefetch" href="/eba-docs/assets/js/30.b79d6fb3.js"><link rel="prefetch" href="/eba-docs/assets/js/31.00a35a55.js"><link rel="prefetch" href="/eba-docs/assets/js/32.9f5c7ef0.js"><link rel="prefetch" href="/eba-docs/assets/js/33.24efcc25.js"><link rel="prefetch" href="/eba-docs/assets/js/34.8190f982.js"><link rel="prefetch" href="/eba-docs/assets/js/35.85e05e0d.js"><link rel="prefetch" href="/eba-docs/assets/js/36.eb510061.js"><link rel="prefetch" href="/eba-docs/assets/js/37.ae51f5dc.js"><link rel="prefetch" href="/eba-docs/assets/js/38.90371885.js"><link rel="prefetch" href="/eba-docs/assets/js/39.f0862eda.js"><link rel="prefetch" href="/eba-docs/assets/js/4.8cb4e5bb.js"><link rel="prefetch" href="/eba-docs/assets/js/40.14bfb347.js"><link rel="prefetch" href="/eba-docs/assets/js/41.69f593cb.js"><link rel="prefetch" href="/eba-docs/assets/js/42.d21204d2.js"><link rel="prefetch" href="/eba-docs/assets/js/43.de3ea1ef.js"><link rel="prefetch" href="/eba-docs/assets/js/44.30720a9c.js"><link rel="prefetch" href="/eba-docs/assets/js/45.a4790e9d.js"><link rel="prefetch" href="/eba-docs/assets/js/46.c4c990b9.js"><link rel="prefetch" href="/eba-docs/assets/js/47.5909ea53.js"><link rel="prefetch" href="/eba-docs/assets/js/48.16a24e76.js"><link rel="prefetch" href="/eba-docs/assets/js/49.0b002da0.js"><link rel="prefetch" href="/eba-docs/assets/js/5.2e8299f6.js"><link rel="prefetch" href="/eba-docs/assets/js/50.eaec7ada.js"><link rel="prefetch" href="/eba-docs/assets/js/51.297b3c00.js"><link rel="prefetch" href="/eba-docs/assets/js/52.5a644261.js"><link rel="prefetch" href="/eba-docs/assets/js/53.0f2fd27a.js"><link rel="prefetch" href="/eba-docs/assets/js/54.8c36764e.js"><link rel="prefetch" href="/eba-docs/assets/js/55.18fed56a.js"><link rel="prefetch" href="/eba-docs/assets/js/56.88530eb3.js"><link rel="prefetch" href="/eba-docs/assets/js/57.4515f1ed.js"><link rel="prefetch" href="/eba-docs/assets/js/58.3f11c74e.js"><link rel="prefetch" href="/eba-docs/assets/js/59.bd0bf126.js"><link rel="prefetch" href="/eba-docs/assets/js/6.8e37d59a.js"><link rel="prefetch" href="/eba-docs/assets/js/60.e411ccaa.js"><link rel="prefetch" href="/eba-docs/assets/js/61.965f1943.js"><link rel="prefetch" href="/eba-docs/assets/js/62.2db18915.js"><link rel="prefetch" href="/eba-docs/assets/js/63.60826fcb.js"><link rel="prefetch" href="/eba-docs/assets/js/64.4e484809.js"><link rel="prefetch" href="/eba-docs/assets/js/65.75d25a76.js"><link rel="prefetch" href="/eba-docs/assets/js/66.13ac7a55.js"><link rel="prefetch" href="/eba-docs/assets/js/67.a81a1021.js"><link rel="prefetch" href="/eba-docs/assets/js/68.8015ea0e.js"><link rel="prefetch" href="/eba-docs/assets/js/69.35bf8592.js"><link rel="prefetch" href="/eba-docs/assets/js/7.08c48c2f.js"><link rel="prefetch" href="/eba-docs/assets/js/70.b92e58ef.js"><link rel="prefetch" href="/eba-docs/assets/js/71.7aff4272.js"><link rel="prefetch" href="/eba-docs/assets/js/72.2b042f12.js"><link rel="prefetch" href="/eba-docs/assets/js/73.479400e8.js"><link rel="prefetch" href="/eba-docs/assets/js/74.f3d49b29.js"><link rel="prefetch" href="/eba-docs/assets/js/75.644e4dc2.js"><link rel="prefetch" href="/eba-docs/assets/js/76.0b3be451.js"><link rel="prefetch" href="/eba-docs/assets/js/77.70aab8b4.js"><link rel="prefetch" href="/eba-docs/assets/js/78.6fbb3df5.js"><link rel="prefetch" href="/eba-docs/assets/js/79.1bf27678.js"><link rel="prefetch" href="/eba-docs/assets/js/8.b2913ca0.js"><link rel="prefetch" href="/eba-docs/assets/js/80.49bf67da.js"><link rel="prefetch" href="/eba-docs/assets/js/81.0e9cf2a3.js"><link rel="prefetch" href="/eba-docs/assets/js/82.950f02ed.js"><link rel="prefetch" href="/eba-docs/assets/js/83.700f35b5.js"><link rel="prefetch" href="/eba-docs/assets/js/84.e4c45909.js"><link rel="prefetch" href="/eba-docs/assets/js/85.b6641e48.js"><link rel="prefetch" href="/eba-docs/assets/js/86.90df0881.js"><link rel="prefetch" href="/eba-docs/assets/js/87.5f40b4e9.js"><link rel="prefetch" href="/eba-docs/assets/js/88.cf2561a2.js"><link rel="prefetch" href="/eba-docs/assets/js/89.451fd7d4.js"><link rel="prefetch" href="/eba-docs/assets/js/9.33bb6af0.js"><link rel="prefetch" href="/eba-docs/assets/js/90.8b80a1bb.js"><link rel="prefetch" href="/eba-docs/assets/js/91.b992b61a.js"><link rel="prefetch" href="/eba-docs/assets/js/92.46fad1a2.js"><link rel="prefetch" href="/eba-docs/assets/js/93.af59df59.js"><link rel="prefetch" href="/eba-docs/assets/js/94.ce81afd6.js"><link rel="prefetch" href="/eba-docs/assets/js/95.31f5c147.js"><link rel="prefetch" href="/eba-docs/assets/js/96.e34e9e41.js"><link rel="prefetch" href="/eba-docs/assets/js/97.cf82a727.js"><link rel="prefetch" href="/eba-docs/assets/js/98.9a555d93.js"><link rel="prefetch" href="/eba-docs/assets/js/99.df53cfaf.js">
+    <link rel="stylesheet" href="/eba-docs/assets/css/0.styles.a050cb89.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/eba-docs/" class="home-link router-link-active"><!----> <span class="site-name">IBM Embedded Business AI Framework</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/eba-docs/about/" class="nav-link router-link-active">About</a></div><div class="nav-item"><a href="/eba-docs/guide/LandingPage.html" class="nav-link">Documentation</a></div><div class="nav-item"><a href="/eba-docs/release/ReleaseNotes.html" class="nav-link">Release Notes</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Use it now</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://eba.ibm.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Launch in Web
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://ibm.box.com/shared/static/m7wm02x2qdevpacf2u1ugj6koapr37ta.dmg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Download as App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://slack.com/oauth/authorize?client_id=14390917878.401235455793&amp;scope=bot,users.profile:read&amp;redirect_uri=https%3a%2f%2feba.ibm.com%2fslack%2foauth" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Add to Slack
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/louisroehrs/eba-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/eba-docs/about/" class="nav-link router-link-active">About</a></div><div class="nav-item"><a href="/eba-docs/guide/LandingPage.html" class="nav-link">Documentation</a></div><div class="nav-item"><a href="/eba-docs/release/ReleaseNotes.html" class="nav-link">Release Notes</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Use it now</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://eba.ibm.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Launch in Web
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://ibm.box.com/shared/static/m7wm02x2qdevpacf2u1ugj6koapr37ta.dmg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Download as App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://slack.com/oauth/authorize?client_id=14390917878.401235455793&amp;scope=bot,users.profile:read&amp;redirect_uri=https%3a%2f%2feba.ibm.com%2fslack%2foauth" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Add to Slack
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/louisroehrs/eba-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>About</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/eba-docs/about/" class="sidebar-link">This is EBA</a></li><li><a href="/eba-docs/about/About.html" class="sidebar-link">Why EBA?</a></li><li><a href="/eba-docs/about/Features.html" class="sidebar-link">Features</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Programming</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Development Lab</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Example agents</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Integrations</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Articles</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Release notes</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><p>Hi</p> <p>{
+  &quot;title&quot;: &quot;IBM Embedded Business AI Framework&quot;,
+  &quot;description&quot;: &quot;Ask, get answers, and automate in the language of your business.&quot;,
+  &quot;base&quot;: &quot;/eba-docs/&quot;,
+  &quot;pages&quot;: [
+    {
+      &quot;key&quot;: &quot;v-80378a4f6b457&quot;,
+      &quot;path&quot;: &quot;/&quot;,
+      &quot;title&quot;: &quot;Home&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;home&quot;: true,
+        &quot;heroImage&quot;: &quot;/eba_wma_screenshot.png&quot;,
+        &quot;actionText&quot;: &quot;Get Started →&quot;,
+        &quot;actionLink&quot;: &quot;/about/&quot;,
+        &quot;features&quot;: [
+          {
+            &quot;title&quot;: &quot;Your Business Language&quot;,
+            &quot;details&quot;: &quot;Teach EBA your business domain and the concepts for which you want answers.&quot;
+          },
+          {
+            &quot;title&quot;: &quot;Data Integration&quot;,
+            &quot;details&quot;: &quot;Show EBA where all to get answers to your questions from any datasource, API, and documents.&quot;
+          },
+          {
+            &quot;title&quot;: &quot;Leave the UI to us&quot;,
+            &quot;details&quot;: &quot;Answers will be presented in the relevant UI and you can create your own presentation.&quot;
+          }
+        ],
+        &quot;footer&quot;: &quot;Documentation Apache Licensed | Copyright  2018-present IBM Corp.&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4ad5649d475bc&quot;,
+      &quot;path&quot;: &quot;/about/About.html&quot;,
+      &quot;title&quot;: &quot;Why EBA?&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Experience&quot;,
+          &quot;slug&quot;: &quot;experience&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Environment&quot;,
+          &quot;slug&quot;: &quot;environment&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Evolution&quot;,
+          &quot;slug&quot;: &quot;evolution&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;EBA construction&quot;,
+          &quot;slug&quot;: &quot;eba-construction&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;EBA history&quot;,
+          &quot;slug&quot;: &quot;eba-history&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-ccf4040c2d1f7&quot;,
+      &quot;path&quot;: &quot;/about/Features.html&quot;,
+      &quot;title&quot;: &quot;Current major features ##&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Current major features&quot;,
+          &quot;slug&quot;: &quot;current-major-features&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-69be2ddf3e1cd&quot;,
+      &quot;path&quot;: &quot;/about/Info.html&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-aeba6417e03ef&quot;,
+      &quot;path&quot;: &quot;/about/LICENSE.html&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-11556faca28b9&quot;,
+      &quot;path&quot;: &quot;/about/&quot;,
+      &quot;title&quot;: &quot;This is EBA.&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;What can you do with EBA?&quot;,
+          &quot;slug&quot;: &quot;what-can-you-do-with-eba&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Contributing&quot;,
+          &quot;slug&quot;: &quot;contributing&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Usage&quot;,
+          &quot;slug&quot;: &quot;usage&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;License&quot;,
+          &quot;slug&quot;: &quot;license&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2df1f1243d4ad&quot;,
+      &quot;path&quot;: &quot;/articles/DebuggingEBA.html&quot;,
+      &quot;title&quot;: &quot;Debugging Embedded Business Assistant&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Debugging Embedded Business Assistant&quot;,
+          &quot;slug&quot;: &quot;debugging-embedded-business-assistant&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Pipeline overview&quot;,
+          &quot;slug&quot;: &quot;pipeline-overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Built-in Debug Tooling&quot;,
+          &quot;slug&quot;: &quot;built-in-debug-tooling&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-22efea3c96d5d&quot;,
+      &quot;path&quot;: &quot;/articles/DevTips.html&quot;,
+      &quot;title&quot;: &quot;How to disable Chrome's two-finger back/forward navigation?&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;How to disable Chrome's two-finger back/forward navigation?&quot;,
+          &quot;slug&quot;: &quot;how-to-disable-chrome-s-two-finger-back-forward-navigation&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-c047c99eb3aa&quot;,
+      &quot;path&quot;: &quot;/articles/NLUBestPractices.html&quot;,
+      &quot;title&quot;: &quot;Best practices&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;The Golden Rule&quot;,
+          &quot;slug&quot;: &quot;the-golden-rule&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Thorough ontology&quot;,
+          &quot;slug&quot;: &quot;thorough-ontology&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Baseline NLU&quot;,
+          &quot;slug&quot;: &quot;baseline-nlu&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Correct semantics&quot;,
+          &quot;slug&quot;: &quot;correct-semantics&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Implicit knowledge&quot;,
+          &quot;slug&quot;: &quot;implicit-knowledge&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Extending core functionality&quot;,
+          &quot;slug&quot;: &quot;extending-core-functionality&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Atomic actions&quot;,
+          &quot;slug&quot;: &quot;atomic-actions&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2dbc259e28eeb&quot;,
+      &quot;path&quot;: &quot;/articles/NaturalLanguageUnderstanding.html&quot;,
+      &quot;title&quot;: &quot;Amplification in natural language understanding&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Amplification in natural language understanding&quot;,
+          &quot;slug&quot;: &quot;amplification-in-natural-language-understanding&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-24ef01922936c&quot;,
+      &quot;path&quot;: &quot;/articles/Todo.html&quot;,
+      &quot;title&quot;: &quot;Todo to make this guide better.&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-cd7fc78859ce4&quot;,
+      &quot;path&quot;: &quot;/getting-started/ActionsOld.html&quot;,
+      &quot;title&quot;: &quot;Actions&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-ef10ce0d00f9d&quot;,
+      &quot;path&quot;: &quot;/getting-started/GettingStarted.html&quot;,
+      &quot;title&quot;: &quot;Getting started tutorial&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Reasoning pipeline&quot;,
+          &quot;slug&quot;: &quot;reasoning-pipeline&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Development workflow&quot;,
+          &quot;slug&quot;: &quot;development-workflow&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Ontology&quot;,
+          &quot;slug&quot;: &quot;ontology&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Rules&quot;,
+          &quot;slug&quot;: &quot;rules&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Visualizers&quot;,
+          &quot;slug&quot;: &quot;visualizers&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Next Steps&quot;,
+          &quot;slug&quot;: &quot;next-steps&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-405d38c464409&quot;,
+      &quot;path&quot;: &quot;/getting-started/OntologyOld.html&quot;,
+      &quot;title&quot;: &quot;Ontology&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Ontology&quot;,
+          &quot;slug&quot;: &quot;ontology&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-3832852efe48a&quot;,
+      &quot;path&quot;: &quot;/getting-started/PatternsOld.html&quot;,
+      &quot;title&quot;: &quot;Patterns&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-a7f761bf31c0d&quot;,
+      &quot;path&quot;: &quot;/getting-started/RulesOld.html&quot;,
+      &quot;title&quot;: &quot;Rules&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Rules&quot;,
+          &quot;slug&quot;: &quot;rules&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-6b2795e9c47d6&quot;,
+      &quot;path&quot;: &quot;/getting-started/VisualizersOld.html&quot;,
+      &quot;title&quot;: &quot;Visualizers&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Visualizers&quot;,
+          &quot;slug&quot;: &quot;visualizers&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;The End For Now&quot;,
+          &quot;slug&quot;: &quot;the-end-for-now&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-617d375b5b4af&quot;,
+      &quot;path&quot;: &quot;/guide/LandingPage.html&quot;,
+      &quot;title&quot;: &quot;Programming EBA&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-a8573b441b398&quot;,
+      &quot;path&quot;: &quot;/guide/&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-ff35de6c3f6d9&quot;,
+      &quot;path&quot;: &quot;/integration/Headless.html&quot;,
+      &quot;title&quot;: &quot;Headless Integration&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Connecting to EBA&quot;,
+          &quot;slug&quot;: &quot;connecting-to-eba&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Interacting with EBA&quot;,
+          &quot;slug&quot;: &quot;interacting-with-eba&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-34c336c743f0c&quot;,
+      &quot;path&quot;: &quot;/integration/Integrations.html&quot;,
+      &quot;title&quot;: &quot;Integrating EBA to your systems.&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-fe91b26ace7e6&quot;,
+      &quot;path&quot;: &quot;/integration/Mobile.html&quot;,
+      &quot;title&quot;: &quot;Mobile web integration&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-f171fe76463f9&quot;,
+      &quot;path&quot;: &quot;/integration/Voices.html&quot;,
+      &quot;title&quot;: &quot;Voices supported by EBA&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-63abe0d897561&quot;,
+      &quot;path&quot;: &quot;/integration/Web.html&quot;,
+      &quot;title&quot;: &quot;Web Integration&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Adding IBM_EBA and Calling Setup&quot;,
+          &quot;slug&quot;: &quot;adding-ibm-eba-and-calling-setup&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;IBM_EBA API&quot;,
+          &quot;slug&quot;: &quot;ibm-eba-api&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Display Modes&quot;,
+          &quot;slug&quot;: &quot;display-modes&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-726869c1647c3&quot;,
+      &quot;path&quot;: &quot;/lab/Actions.html&quot;,
+      &quot;title&quot;: &quot;Actions tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Naming&quot;,
+          &quot;slug&quot;: &quot;naming&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Signature&quot;,
+          &quot;slug&quot;: &quot;signature&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Constraints&quot;,
+          &quot;slug&quot;: &quot;constraints&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Input&quot;,
+          &quot;slug&quot;: &quot;input&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Output&quot;,
+          &quot;slug&quot;: &quot;output&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Protocol&quot;,
+          &quot;slug&quot;: &quot;protocol&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Modules&quot;,
+          &quot;slug&quot;: &quot;modules&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Helpers&quot;,
+          &quot;slug&quot;: &quot;helpers&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-63b020e4e742&quot;,
+      &quot;path&quot;: &quot;/lab/AgentAPI.html&quot;,
+      &quot;title&quot;: &quot;Agent API&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-53d76e841e5ea&quot;,
+      &quot;path&quot;: &quot;/lab/Assets.html&quot;,
+      &quot;title&quot;: &quot;Assets tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Assets tab&quot;,
+          &quot;slug&quot;: &quot;assets-tab&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Backend assets&quot;,
+          &quot;slug&quot;: &quot;backend-assets&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Frontend assets&quot;,
+          &quot;slug&quot;: &quot;frontend-assets&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2586642bc264d&quot;,
+      &quot;path&quot;: &quot;/lab/BlackboxRuntime.html&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-abc903bb30646&quot;,
+      &quot;path&quot;: &quot;/lab/Concepts.html&quot;,
+      &quot;title&quot;: &quot;Concepts tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Naming&quot;,
+          &quot;slug&quot;: &quot;naming&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Spelling, subClasses, and listOfs&quot;,
+          &quot;slug&quot;: &quot;spelling-subclasses-and-listofs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Attributes&quot;,
+          &quot;slug&quot;: &quot;attributes&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Ontology&quot;,
+          &quot;slug&quot;: &quot;ontology&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Notes&quot;,
+          &quot;slug&quot;: &quot;notes&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-658da7d7850e9&quot;,
+      &quot;path&quot;: &quot;/lab/ControlBar.html&quot;,
+      &quot;title&quot;: &quot;Control bar&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Agent selector&quot;,
+          &quot;slug&quot;: &quot;agent-selector&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Undo and redo&quot;,
+          &quot;slug&quot;: &quot;undo-and-redo&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Saving and discarding&quot;,
+          &quot;slug&quot;: &quot;saving-and-discarding&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Import and export&quot;,
+          &quot;slug&quot;: &quot;import-and-export&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-5192573fad28d&quot;,
+      &quot;path&quot;: &quot;/lab/Debug.html&quot;,
+      &quot;title&quot;: &quot;Debug tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Debug tab&quot;,
+          &quot;slug&quot;: &quot;debug-tab&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-d8074fd8314a5&quot;,
+      &quot;path&quot;: &quot;/lab/EndpointsOld.html&quot;,
+      &quot;title&quot;: &quot;Endpoints&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Endpoints&quot;,
+          &quot;slug&quot;: &quot;endpoints&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-be31026f48bce&quot;,
+      &quot;path&quot;: &quot;/lab/Explore.html&quot;,
+      &quot;title&quot;: &quot;Explore tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Explore tab&quot;,
+          &quot;slug&quot;: &quot;explore-tab&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-d78085636df7c&quot;,
+      &quot;path&quot;: &quot;/lab/ExternalRuntime.html&quot;,
+      &quot;title&quot;: &quot;External Runtime&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-26f47e9e8b9af&quot;,
+      &quot;path&quot;: &quot;/lab/General.html&quot;,
+      &quot;title&quot;: &quot;General tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Description&quot;,
+          &quot;slug&quot;: &quot;description&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Settings&quot;,
+          &quot;slug&quot;: &quot;settings&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Secrets&quot;,
+          &quot;slug&quot;: &quot;secrets&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Endpoints&quot;,
+          &quot;slug&quot;: &quot;endpoints&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Start endpoint&quot;,
+          &quot;slug&quot;: &quot;start-endpoint&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Annotate endpoint&quot;,
+          &quot;slug&quot;: &quot;annotate-endpoint&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Force endpoint&quot;,
+          &quot;slug&quot;: &quot;force-endpoint&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;React endpoint&quot;,
+          &quot;slug&quot;: &quot;react-endpoint&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Render endpoint&quot;,
+          &quot;slug&quot;: &quot;render-endpoint&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;API endpoint&quot;,
+          &quot;slug&quot;: &quot;api-endpoint&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fallback endpoint&quot;,
+          &quot;slug&quot;: &quot;fallback-endpoint&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Online Help&quot;,
+          &quot;slug&quot;: &quot;online-help&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-3353e9844ed59&quot;,
+      &quot;path&quot;: &quot;/lab/NodeHelpers.html&quot;,
+      &quot;title&quot;: &quot;Node helpers&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Table of contents&quot;,
+          &quot;slug&quot;: &quot;table-of-contents&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Input&quot;,
+          &quot;slug&quot;: &quot;input&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Output&quot;,
+          &quot;slug&quot;: &quot;output&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Lazy Evaluation&quot;,
+          &quot;slug&quot;: &quot;lazy-evaluation&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Ontology&quot;,
+          &quot;slug&quot;: &quot;ontology&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Short Term Memory&quot;,
+          &quot;slug&quot;: &quot;short-term-memory&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Long Term Memory&quot;,
+          &quot;slug&quot;: &quot;long-term-memory&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Natural Language Generation&quot;,
+          &quot;slug&quot;: &quot;natural-language-generation&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Natural Language Understanding&quot;,
+          &quot;slug&quot;: &quot;natural-language-understanding&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Use in external actions&quot;,
+          &quot;slug&quot;: &quot;use-in-external-actions&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-0e07b6374057e&quot;,
+      &quot;path&quot;: &quot;/lab/NodeModules.html&quot;,
+      &quot;title&quot;: &quot;Node modules&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Node modules&quot;,
+          &quot;slug&quot;: &quot;node-modules&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-1aee704f7462a&quot;,
+      &quot;path&quot;: &quot;/lab/NodeRuntimeOld.html&quot;,
+      &quot;title&quot;: &quot;Node runtime&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Node runtime&quot;,
+          &quot;slug&quot;: &quot;node-runtime&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-0bbd9a3ea8ac6&quot;,
+      &quot;path&quot;: &quot;/lab/Overview.html&quot;,
+      &quot;title&quot;: &quot;Development Lab Overview&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-370dc04cbc452&quot;,
+      &quot;path&quot;: &quot;/lab/Patterns.html&quot;,
+      &quot;title&quot;: &quot;Patterns tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-846fc171bf0aa&quot;,
+      &quot;path&quot;: &quot;/lab/Rules.html&quot;,
+      &quot;title&quot;: &quot;Rules tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Naming&quot;,
+          &quot;slug&quot;: &quot;naming&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Input&quot;,
+          &quot;slug&quot;: &quot;input&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Output&quot;,
+          &quot;slug&quot;: &quot;output&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-b464ec0e0d694&quot;,
+      &quot;path&quot;: &quot;/lab/Settings.html&quot;,
+      &quot;title&quot;: &quot;Settings&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Settings&quot;,
+          &quot;slug&quot;: &quot;settings&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-47f4cceffff37&quot;,
+      &quot;path&quot;: &quot;/lab/SourceControl.html&quot;,
+      &quot;title&quot;: &quot;Github Source Control&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Semantics&quot;,
+          &quot;slug&quot;: &quot;semantics&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Pushing Changes&quot;,
+          &quot;slug&quot;: &quot;pushing-changes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Creating a Pull Request&quot;,
+          &quot;slug&quot;: &quot;creating-a-pull-request&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Checkout Changes&quot;,
+          &quot;slug&quot;: &quot;checkout-changes&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Configuration&quot;,
+          &quot;slug&quot;: &quot;configuration&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-28e343b6e6351&quot;,
+      &quot;path&quot;: &quot;/lab/Training.html&quot;,
+      &quot;title&quot;: &quot;Training tab&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Training tab&quot;,
+          &quot;slug&quot;: &quot;training-tab&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Samples table&quot;,
+          &quot;slug&quot;: &quot;samples-table&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Run a training job&quot;,
+          &quot;slug&quot;: &quot;run-a-training-job&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-bcad85a7747af&quot;,
+      &quot;path&quot;: &quot;/lab/UIComponents.html&quot;,
+      &quot;title&quot;: &quot;Native UI Components&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;List&quot;,
+          &quot;slug&quot;: &quot;list&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Table&quot;,
+          &quot;slug&quot;: &quot;table&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Props&quot;,
+          &quot;slug&quot;: &quot;props&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-05841d2395227&quot;,
+      &quot;path&quot;: &quot;/lab/assets/Frontend.html&quot;,
+      &quot;title&quot;: &quot;Front End Assets&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Front End Assets&quot;,
+          &quot;slug&quot;: &quot;front-end-assets&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Render Environment&quot;,
+          &quot;slug&quot;: &quot;render-environment&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Global Functions and Objects&quot;,
+          &quot;slug&quot;: &quot;global-functions-and-objects&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Native UI Components&quot;,
+          &quot;slug&quot;: &quot;native-ui-components&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-6d1aefa866577&quot;,
+      &quot;path&quot;: &quot;/lab/assets/frontend/React_Lists.html&quot;,
+      &quot;title&quot;: &quot;List&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;List&quot;,
+          &quot;slug&quot;: &quot;list&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-4690d65c1c21&quot;,
+      &quot;path&quot;: &quot;/lab/assets/frontend/React_Plotly.html&quot;,
+      &quot;title&quot;: &quot;Plotly chart&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Plotly chart&quot;,
+          &quot;slug&quot;: &quot;plotly-chart&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-da42c5e391d38&quot;,
+      &quot;path&quot;: &quot;/lab/assets/frontend/React_Props.html&quot;,
+      &quot;title&quot;: &quot;Props&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Props&quot;,
+          &quot;slug&quot;: &quot;props&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-94cd44103e33e&quot;,
+      &quot;path&quot;: &quot;/lab/assets/frontend/React_Tables.html&quot;,
+      &quot;title&quot;: &quot;Table&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Table&quot;,
+          &quot;slug&quot;: &quot;table&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-777e9a73e279c&quot;,
+      &quot;path&quot;: &quot;/lab/endpoints/API.html&quot;,
+      &quot;title&quot;: &quot;API Endpoint&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;API Endpoint&quot;,
+          &quot;slug&quot;: &quot;api-endpoint&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-e4b0700e07bf5&quot;,
+      &quot;path&quot;: &quot;/lab/endpoints/Annotate.html&quot;,
+      &quot;title&quot;: &quot;Annotate endpoint&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Annotate endpoint&quot;,
+          &quot;slug&quot;: &quot;annotate-endpoint&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-945ca60f240b5&quot;,
+      &quot;path&quot;: &quot;/lab/endpoints/Fallback.html&quot;,
+      &quot;title&quot;: &quot;Fallback Endpoint&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Fallback Endpoint&quot;,
+          &quot;slug&quot;: &quot;fallback-endpoint&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-73fe340625b4a&quot;,
+      &quot;path&quot;: &quot;/lab/endpoints/Force.html&quot;,
+      &quot;title&quot;: &quot;Force endpoint&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Force endpoint&quot;,
+          &quot;slug&quot;: &quot;force-endpoint&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2830c99f2450b&quot;,
+      &quot;path&quot;: &quot;/lab/endpoints/React.html&quot;,
+      &quot;title&quot;: &quot;React Endpoint&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;React Endpoint&quot;,
+          &quot;slug&quot;: &quot;react-endpoint&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-7355a65136ec4&quot;,
+      &quot;path&quot;: &quot;/lab/endpoints/Render.html&quot;,
+      &quot;title&quot;: &quot;Render Endpoint&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Render Endpoint&quot;,
+          &quot;slug&quot;: &quot;render-endpoint&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-3de530cd00e55&quot;,
+      &quot;path&quot;: &quot;/lab/endpoints/Start.html&quot;,
+      &quot;title&quot;: &quot;Start endpoint&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Start endpoint&quot;,
+          &quot;slug&quot;: &quot;start-endpoint&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-8105e19f6aa0a&quot;,
+      &quot;path&quot;: &quot;/lab/l10N.html&quot;,
+      &quot;title&quot;: &quot;Localization API&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-4e4c86323e4aa&quot;,
+      &quot;path&quot;: &quot;/reference/AttributesOld.html&quot;,
+      &quot;title&quot;: &quot;Attributes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Attributes&quot;,
+          &quot;slug&quot;: &quot;attributes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Autogenerated concepts&quot;,
+          &quot;slug&quot;: &quot;autogenerated-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Sharing the attributes&quot;,
+          &quot;slug&quot;: &quot;sharing-the-attributes&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-5ed91c92d9f1c&quot;,
+      &quot;path&quot;: &quot;/reference/CoreConceptsOld.html&quot;,
+      &quot;title&quot;: &quot;Core concepts&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Core concepts&quot;,
+          &quot;slug&quot;: &quot;core-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;System interface&quot;,
+          &quot;slug&quot;: &quot;system-interface&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Basic data entities&quot;,
+          &quot;slug&quot;: &quot;basic-data-entities&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Conditions&quot;,
+          &quot;slug&quot;: &quot;conditions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Aggregation&quot;,
+          &quot;slug&quot;: &quot;aggregation&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Qualifiers&quot;,
+          &quot;slug&quot;: &quot;qualifiers&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;NLG&quot;,
+          &quot;slug&quot;: &quot;nlg&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-ce7ad3bdde828&quot;,
+      &quot;path&quot;: &quot;/reference/OntologyOld.html&quot;,
+      &quot;title&quot;: &quot;Ontology&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Ontology&quot;,
+          &quot;slug&quot;: &quot;ontology&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-7468b7c99661&quot;,
+      &quot;path&quot;: &quot;/reference/PromisesOld.html&quot;,
+      &quot;title&quot;: &quot;Promises&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Asking for follow-up information&quot;,
+          &quot;slug&quot;: &quot;asking-for-follow-up-information&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Generating data&quot;,
+          &quot;slug&quot;: &quot;generating-data&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-9d26864e697e5&quot;,
+      &quot;path&quot;: &quot;/reference/Reference.html&quot;,
+      &quot;title&quot;: &quot;Programming Reference&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Ontology&quot;,
+          &quot;slug&quot;: &quot;ontology&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Attributes&quot;,
+          &quot;slug&quot;: &quot;attributes&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Core built-in concepts&quot;,
+          &quot;slug&quot;: &quot;core-built-in-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;User interface concepts&quot;,
+          &quot;slug&quot;: &quot;user-interface-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Action concepts&quot;,
+          &quot;slug&quot;: &quot;action-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Primitive data concepts&quot;,
+          &quot;slug&quot;: &quot;primitive-data-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Conditional concepts&quot;,
+          &quot;slug&quot;: &quot;conditional-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Aggregation concepts&quot;,
+          &quot;slug&quot;: &quot;aggregation-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Qualifier concepts&quot;,
+          &quot;slug&quot;: &quot;qualifier-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;NLG Concepts&quot;,
+          &quot;slug&quot;: &quot;nlg-concepts&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Best practices&quot;,
+          &quot;slug&quot;: &quot;best-practices&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Rules&quot;,
+          &quot;slug&quot;: &quot;rules&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Constraints&quot;,
+          &quot;slug&quot;: &quot;constraints&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Input and output&quot;,
+          &quot;slug&quot;: &quot;input-and-output&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Constraints&quot;,
+          &quot;slug&quot;: &quot;constraints-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ParamType and queryType&quot;,
+          &quot;slug&quot;: &quot;paramtype-and-querytype&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Input&quot;,
+          &quot;slug&quot;: &quot;input&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Output&quot;,
+          &quot;slug&quot;: &quot;output&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Promises&quot;,
+          &quot;slug&quot;: &quot;promises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Asking for follow-up information&quot;,
+          &quot;slug&quot;: &quot;asking-for-follow-up-information&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Generating data&quot;,
+          &quot;slug&quot;: &quot;generating-data&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2990db81bd3d&quot;,
+      &quot;path&quot;: &quot;/release/ReleaseNotes.html&quot;,
+      &quot;title&quot;: &quot;Release Notes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;2019&quot;,
+          &quot;slug&quot;: &quot;_2019&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-c1845aea64bae&quot;,
+      &quot;path&quot;: &quot;/release/ReleaseNotesMine.html&quot;,
+      &quot;title&quot;: &quot;Release Notes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;2019&quot;,
+          &quot;slug&quot;: &quot;_2019&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;April 30:   Agent training&quot;,
+          &quot;slug&quot;: &quot;april-30-agent-training&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;April 30:    Table reordering&quot;,
+          &quot;slug&quot;: &quot;april-30-table-reordering&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;April 30:    Annotate mode&quot;,
+          &quot;slug&quot;: &quot;april-30-annotate-mode&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;April 11:    Auto lazy rendering&quot;,
+          &quot;slug&quot;: &quot;april-11-auto-lazy-rendering&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;April 11:    Superclass rendering&quot;,
+          &quot;slug&quot;: &quot;april-11-superclass-rendering&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;March 23:    Task management and delegation support&quot;,
+          &quot;slug&quot;: &quot;march-23-task-management-and-delegation-support&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;March 16:    Preview: BPMN UI tooling&quot;,
+          &quot;slug&quot;: &quot;march-16-preview-bpmn-ui-tooling&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;March 12:    NL based clarification learning&quot;,
+          &quot;slug&quot;: &quot;march-12-nl-based-clarification-learning&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;March 12:    EBA statistical agent made generally available&quot;,
+          &quot;slug&quot;: &quot;march-12-eba-statistical-agent-made-generally-available&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;March 12:    Activation &amp; Deactivation of agent components&quot;,
+          &quot;slug&quot;: &quot;march-12-activation-deactivation-of-agent-components&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;March 5:    Webpacked bundled assets now supported&quot;,
+          &quot;slug&quot;: &quot;march-5-webpacked-bundled-assets-now-supported&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;March 1:     Activation &amp; Deactivation of EBA agents by users including OOB agents&quot;,
+          &quot;slug&quot;: &quot;march-1-activation-deactivation-of-eba-agents-by-users-including-oob-agents&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;February 20: Generic concepts highlighting and warning&quot;,
+          &quot;slug&quot;: &quot;february-20-generic-concepts-highlighting-and-warning&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;February 19: EBA responses now can be shared or embedded&quot;,
+          &quot;slug&quot;: &quot;february-19-eba-responses-now-can-be-shared-or-embedded&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;January 25:  Natural Language patterns with Markdown syntax&quot;,
+          &quot;slug&quot;: &quot;january-25-natural-language-patterns-with-markdown-syntax&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;January 25:  Support to use arbitrary text in semantic actions via new concept class \&quot;:FreeText\&quot;&quot;,
+          &quot;slug&quot;: &quot;january-25-support-to-use-arbitrary-text-in-semantic-actions-via-new-concept-class-freetext&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;January 25:  Docs agent reimplemented as remote agent&quot;,
+          &quot;slug&quot;: &quot;january-25-docs-agent-reimplemented-as-remote-agent&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;January 17:  QUEST agent enablement&quot;,
+          &quot;slug&quot;: &quot;january-17-quest-agent-enablement&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;January 16:  Iframe Snippets for external channels&quot;,
+          &quot;slug&quot;: &quot;january-16-iframe-snippets-for-external-channels&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;January 15:  Agents-wide metric charts&quot;,
+          &quot;slug&quot;: &quot;january-15-agents-wide-metric-charts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;January 3: Detailed execution workflow of questions&quot;,
+          &quot;slug&quot;: &quot;january-3-detailed-execution-workflow-of-questions&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2f6ba98efeb9b&quot;,
+      &quot;path&quot;: &quot;/release/blogs/AgentActivation.html&quot;,
+      &quot;title&quot;: &quot;Agent level activation and deactivation&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Agent level activation and deactivation&quot;,
+          &quot;slug&quot;: &quot;agent-level-activation-and-deactivation&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-bfe876a20fe57&quot;,
+      &quot;path&quot;: &quot;/release/blogs/AgentLearning.html&quot;,
+      &quot;title&quot;: &quot;EBA agent training&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;EBA agent training&quot;,
+          &quot;slug&quot;: &quot;eba-agent-training&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;How to train your agent&quot;,
+          &quot;slug&quot;: &quot;how-to-train-your-agent&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;How it works&quot;,
+          &quot;slug&quot;: &quot;how-it-works&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-3107e74308e&quot;,
+      &quot;path&quot;: &quot;/release/blogs/AgentsMetrics.html&quot;,
+      &quot;title&quot;: &quot;Agents Metrics&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Agents Metrics&quot;,
+          &quot;slug&quot;: &quot;agents-metrics&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-bf9d0e62e5b1f&quot;,
+      &quot;path&quot;: &quot;/release/blogs/AnnotateMode.html&quot;,
+      &quot;title&quot;: &quot;Annotate mode&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Annotate mode&quot;,
+          &quot;slug&quot;: &quot;annotate-mode&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-5e7c37a1cd33c&quot;,
+      &quot;path&quot;: &quot;/release/blogs/AutoLazyRender.html&quot;,
+      &quot;title&quot;: &quot;Auto lazy rendering&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Auto lazy rendering&quot;,
+          &quot;slug&quot;: &quot;auto-lazy-rendering&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-06fb87ce359dd&quot;,
+      &quot;path&quot;: &quot;/release/blogs/BPMN.html&quot;,
+      &quot;title&quot;: &quot;BPMN UI tooling&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;BPMN UI tooling&quot;,
+          &quot;slug&quot;: &quot;bpmn-ui-tooling&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-07f0b0beee592&quot;,
+      &quot;path&quot;: &quot;/release/blogs/ChannelSnippets.html&quot;,
+      &quot;title&quot;: &quot;Channel Snippets&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Channel Snippets&quot;,
+          &quot;slug&quot;: &quot;channel-snippets&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-5b99feb525928&quot;,
+      &quot;path&quot;: &quot;/release/blogs/ComponentActivation.html&quot;,
+      &quot;title&quot;: &quot;Fine grained component activation and deactivation&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Fine grained component activation and deactivation&quot;,
+          &quot;slug&quot;: &quot;fine-grained-component-activation-and-deactivation&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-793e304aaea0c&quot;,
+      &quot;path&quot;: &quot;/release/blogs/ExecutionWorkflow.html&quot;,
+      &quot;title&quot;: &quot;Execution Workflow&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Execution Workflow&quot;,
+          &quot;slug&quot;: &quot;execution-workflow&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2b212c130de74&quot;,
+      &quot;path&quot;: &quot;/release/blogs/FreeText.html&quot;,
+      &quot;title&quot;: &quot;FreeText&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;FreeText&quot;,
+          &quot;slug&quot;: &quot;freetext&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-4269a420ed22f&quot;,
+      &quot;path&quot;: &quot;/release/blogs/GenericConceptsHighlight.html&quot;,
+      &quot;title&quot;: &quot;Generic concepts highlighting&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Generic concepts highlighting&quot;,
+          &quot;slug&quot;: &quot;generic-concepts-highlighting&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-e2d4cb1738ef2&quot;,
+      &quot;path&quot;: &quot;/release/blogs/MarkdownPatterns.html&quot;,
+      &quot;title&quot;: &quot;Markdown patterns syntax and editor&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Markdown patterns syntax and editor&quot;,
+          &quot;slug&quot;: &quot;markdown-patterns-syntax-and-editor&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-f0db94a0cd57e&quot;,
+      &quot;path&quot;: &quot;/release/blogs/NLLearning.html&quot;,
+      &quot;title&quot;: &quot;NL based clarification learning&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;NL based clarification learning&quot;,
+          &quot;slug&quot;: &quot;nl-based-clarification-learning&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-a3a3db63591bd&quot;,
+      &quot;path&quot;: &quot;/release/blogs/PortableSnippets.html&quot;,
+      &quot;title&quot;: &quot;Portable snippets&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Portable snippets&quot;,
+          &quot;slug&quot;: &quot;portable-snippets&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2819aef6c3914&quot;,
+      &quot;path&quot;: &quot;/release/blogs/RemoteDocsAgent.html&quot;,
+      &quot;title&quot;: &quot;Remote documentation agent&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Remote documentation agent&quot;,
+          &quot;slug&quot;: &quot;remote-documentation-agent&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-b252d073d1c06&quot;,
+      &quot;path&quot;: &quot;/release/blogs/StatisicsAgent.html&quot;,
+      &quot;title&quot;: &quot;Statistical agent&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Statistical agent&quot;,
+          &quot;slug&quot;: &quot;statistical-agent&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-90f1621574a33&quot;,
+      &quot;path&quot;: &quot;/release/blogs/SuperclassRender.html&quot;,
+      &quot;title&quot;: &quot;Superclass rendering pipeline&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Superclass rendering pipeline&quot;,
+          &quot;slug&quot;: &quot;superclass-rendering-pipeline&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-3759ba2bf4327&quot;,
+      &quot;path&quot;: &quot;/release/blogs/TableOrdering.html&quot;,
+      &quot;title&quot;: &quot;Table ordering&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Table ordering&quot;,
+          &quot;slug&quot;: &quot;table-ordering&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-44144dc7798c4&quot;,
+      &quot;path&quot;: &quot;/release/blogs/TaskManagement.html&quot;,
+      &quot;title&quot;: &quot;Task management and delegation&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Task management and delegation&quot;,
+          &quot;slug&quot;: &quot;task-management-and-delegation&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-63168e20b680f&quot;,
+      &quot;path&quot;: &quot;/release/blogs/WebpackAssets.html&quot;,
+      &quot;title&quot;: &quot;Webpack assets&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Webpack assets&quot;,
+          &quot;slug&quot;: &quot;webpack-assets&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Some use cases to consider&quot;,
+          &quot;slug&quot;: &quot;some-use-cases-to-consider&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-1bb31879639&quot;,
+      &quot;path&quot;: &quot;/samples/EDI.html&quot;,
+      &quot;title&quot;: &quot;EDI Sample&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Dev notes&quot;,
+          &quot;slug&quot;: &quot;dev-notes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rewriting rules&quot;,
+          &quot;slug&quot;: &quot;rewriting-rules&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Debug&quot;,
+          &quot;slug&quot;: &quot;debug&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-7a33c2052cd01&quot;,
+      &quot;path&quot;: &quot;/samples/Quest.html&quot;,
+      &quot;title&quot;: &quot;Quest Sample&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Sample questions:&quot;,
+          &quot;slug&quot;: &quot;sample-questions&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-41b5da406a61c&quot;,
+      &quot;path&quot;: &quot;/samples/Riddles.html&quot;,
+      &quot;title&quot;: &quot;Riddles Sample&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Dev notes&quot;,
+          &quot;slug&quot;: &quot;dev-notes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-e4bbc3be7b8c5&quot;,
+      &quot;path&quot;: &quot;/samples/Samples.html&quot;,
+      &quot;title&quot;: &quot;Example agents&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;sidebarDepth&quot;: 1
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-58f415fbf4bd7&quot;,
+      &quot;path&quot;: &quot;/samples/SamplesFull.html&quot;,
+      &quot;title&quot;: &quot;Example agents&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Walmart trends&quot;,
+          &quot;slug&quot;: &quot;walmart-trends&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rewriting rules&quot;,
+          &quot;slug&quot;: &quot;rewriting-rules&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Riddles&quot;,
+          &quot;slug&quot;: &quot;riddles&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets-2&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Wikipedia&quot;,
+          &quot;slug&quot;: &quot;wikipedia&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Watson Discovery&quot;,
+          &quot;slug&quot;: &quot;watson-discovery&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general-3&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fallback&quot;,
+          &quot;slug&quot;: &quot;fallback&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets-3&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;EDI&quot;,
+          &quot;slug&quot;: &quot;edi&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general-4&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts-3&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions-3&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rewriting rules&quot;,
+          &quot;slug&quot;: &quot;rewriting-rules-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets-4&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Debug&quot;,
+          &quot;slug&quot;: &quot;debug&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Supply Chain&quot;,
+          &quot;slug&quot;: &quot;supply-chain&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general-5&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts-4&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns-3&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions-4&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets-5&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Quest&quot;,
+          &quot;slug&quot;: &quot;quest&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Sample questions:&quot;,
+          &quot;slug&quot;: &quot;sample-questions&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;sidebarDepth&quot;: 1
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1ed44f45378e6&quot;,
+      &quot;path&quot;: &quot;/samples/SupplyChain.html&quot;,
+      &quot;title&quot;: &quot;Suplly Chain Sample&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Dev notes&quot;,
+          &quot;slug&quot;: &quot;dev-notes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-8adf0399fef46&quot;,
+      &quot;path&quot;: &quot;/samples/Walmart.html&quot;,
+      &quot;title&quot;: &quot;Walmart example&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Dev notes&quot;,
+          &quot;slug&quot;: &quot;dev-notes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Concepts&quot;,
+          &quot;slug&quot;: &quot;concepts&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Patterns&quot;,
+          &quot;slug&quot;: &quot;patterns&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Actions&quot;,
+          &quot;slug&quot;: &quot;actions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rewriting rules&quot;,
+          &quot;slug&quot;: &quot;rewriting-rules&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-2f28257646471&quot;,
+      &quot;path&quot;: &quot;/samples/WatsonDiscovery.html&quot;,
+      &quot;title&quot;: &quot;Watson Discovery Sample&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Dev Notes&quot;,
+          &quot;slug&quot;: &quot;dev-notes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General&quot;,
+          &quot;slug&quot;: &quot;general&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fallback&quot;,
+          &quot;slug&quot;: &quot;fallback&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assets&quot;,
+          &quot;slug&quot;: &quot;assets&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-dae62efe22b5c&quot;,
+      &quot;path&quot;: &quot;/samples/Wikipedia.html&quot;,
+      &quot;title&quot;: &quot;Wikipedia Sample&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-3c4cdb9305559&quot;,
+      &quot;path&quot;: &quot;/samples/websocket-java-client/&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-bf5de0b3eecd&quot;,
+      &quot;path&quot;: &quot;/samples/websocket-node-client/&quot;,
+      &quot;frontmatter&quot;: {}
+    }
+  ],
+  &quot;themeConfig&quot;: {
+    &quot;repo&quot;: &quot;louisroehrs/eba-docs&quot;,
+    &quot;docsDir&quot;: &quot;docs&quot;,
+    &quot;docsBranch&quot;: &quot;master&quot;,
+    &quot;editLinks&quot;: true,
+    &quot;editLinkText&quot;: &quot;edit&quot;,
+    &quot;product&quot;: {
+      &quot;name&quot;: &quot;EBA&quot;
+    },
+    &quot;displayAllHeaders&quot;: false,
+    &quot;sidebarDepth&quot;: 2,
+    &quot;sidebar&quot;: [
+      {
+        &quot;title&quot;: &quot;About&quot;,
+        &quot;children&quot;: [
+          [
+            &quot;/about/&quot;,
+            &quot;This is EBA&quot;
+          ],
+          [
+            &quot;/about/About&quot;,
+            &quot;Why EBA?&quot;
+          ],
+          [
+            &quot;/about/Features&quot;,
+            &quot;Features&quot;
+          ]
+        ]
+      },
+      {
+        &quot;title&quot;: &quot;Programming&quot;,
+        &quot;children&quot;: [
+          [
+            &quot;/guide/LandingPage&quot;,
+            &quot;Programming EBA&quot;
+          ],
+          [
+            &quot;/getting-started/GettingStarted&quot;,
+            &quot;Start with our tutorial&quot;
+          ],
+          [
+            &quot;/reference/Reference&quot;,
+            &quot;Programming reference&quot;
+          ]
+        ]
+      },
+      {
+        &quot;title&quot;: &quot;Development Lab&quot;,
+        &quot;children&quot;: [
+          [
+            &quot;/lab/Overview&quot;,
+            &quot;Lab overview&quot;
+          ],
+          [
+            &quot;/lab/ControlBar&quot;,
+            &quot;Control bar&quot;
+          ],
+          [
+            &quot;/lab/General&quot;,
+            &quot;General tab&quot;
+          ],
+          [
+            &quot;/lab/Concepts&quot;,
+            &quot;Concepts tab&quot;
+          ],
+          [
+            &quot;/lab/Patterns&quot;,
+            &quot;Patterns tab&quot;
+          ],
+          [
+            &quot;/lab/Actions&quot;,
+            &quot;Actions tab&quot;
+          ],
+          [
+            &quot;/lab/Rules&quot;,
+            &quot;Rules tab&quot;
+          ],
+          [
+            &quot;/lab/Assets&quot;,
+            &quot;Assets tab&quot;
+          ],
+          [
+            &quot;/lab/Explore&quot;,
+            &quot;Explore tab&quot;
+          ],
+          [
+            &quot;/lab/Debug&quot;,
+            &quot;Debug tab&quot;
+          ],
+          [
+            &quot;/lab/Training&quot;,
+            &quot;Training tab&quot;
+          ],
+          [
+            &quot;/lab/SourceControl&quot;,
+            &quot;Github tab&quot;
+          ],
+          [
+            &quot;/lab/NodeHelpers&quot;,
+            &quot;Node helpers&quot;
+          ],
+          [
+            &quot;/lab/assets/Frontend.md&quot;,
+            &quot;Frontend&quot;
+          ],
+          [
+            &quot;/lab/UIComponents&quot;,
+            &quot;Frontend UI components&quot;
+          ],
+          [
+            &quot;/lab/NodeModules&quot;,
+            &quot;NodeJS support&quot;
+          ],
+          [
+            &quot;/lab/ExternalRuntime&quot;,
+            &quot;External runtime&quot;
+          ],
+          [
+            &quot;/lab/BlackboxRuntime&quot;,
+            &quot;Blackbox runtime&quot;
+          ],
+          [
+            &quot;/lab/AgentAPI&quot;,
+            &quot;Agent API&quot;
+          ],
+          [
+            &quot;/lab/l10N&quot;,
+            &quot;Localization API&quot;
+          ]
+        ]
+      },
+      {
+        &quot;title&quot;: &quot;Example agents&quot;,
+        &quot;children&quot;: [
+          [
+            &quot;/samples/Samples&quot;,
+            &quot;Overview&quot;
+          ],
+          [
+            &quot;/samples/Walmart&quot;,
+            &quot;Walmart trends&quot;
+          ],
+          [
+            &quot;/samples/Riddles&quot;,
+            &quot;Riddles&quot;
+          ],
+          [
+            &quot;/samples/Wikipedia&quot;,
+            &quot;Wikipedia&quot;
+          ],
+          [
+            &quot;/samples/WatsonDiscovery&quot;,
+            &quot;Watson Discovery&quot;
+          ],
+          [
+            &quot;/samples/EDI&quot;,
+            &quot;EDI&quot;
+          ],
+          [
+            &quot;/samples/SupplyChain&quot;,
+            &quot;Supply Chain&quot;
+          ],
+          [
+            &quot;/samples/Quest&quot;,
+            &quot;Quest&quot;
+          ]
+        ]
+      },
+      {
+        &quot;title&quot;: &quot;Integrations&quot;,
+        &quot;children&quot;: [
+          [
+            &quot;/integration/Integrations&quot;,
+            &quot;Overview&quot;
+          ],
+          [
+            &quot;/integration/Web&quot;,
+            &quot;Web&quot;
+          ],
+          [
+            &quot;/integration/Headless&quot;,
+            &quot;Headless&quot;
+          ],
+          [
+            &quot;/integration/Mobile&quot;,
+            &quot;Mobile&quot;
+          ],
+          [
+            &quot;/integration/Voices&quot;,
+            &quot;Voices&quot;
+          ]
+        ]
+      },
+      {
+        &quot;title&quot;: &quot;Articles&quot;,
+        &quot;children&quot;: [
+          [
+            &quot;/articles/NLUBestPractices&quot;,
+            &quot;Best Practices for NLU&quot;
+          ],
+          [
+            &quot;/articles/NaturalLanguageUnderstanding&quot;,
+            &quot;Natural Language Understanding&quot;
+          ],
+          [
+            &quot;/articles/DebuggingEBA&quot;,
+            &quot;Debugging EBA&quot;
+          ],
+          [
+            &quot;/articles/DevTips&quot;,
+            &quot;Tips for Chrome Users&quot;
+          ]
+        ]
+      },
+      {
+        &quot;title&quot;: &quot;Release notes&quot;,
+        &quot;children&quot;: [
+          [
+            &quot;/release/ReleaseNotes.md&quot;,
+            &quot;Overview&quot;
+          ],
+          &quot;/release/blogs/AgentActivation.md&quot;,
+          &quot;/release/blogs/AgentLearning.md&quot;,
+          &quot;/release/blogs/AgentsMetrics.md&quot;,
+          &quot;/release/blogs/AnnotateMode.md&quot;,
+          &quot;/release/blogs/AutoLazyRender.md&quot;,
+          &quot;/release/blogs/BPMN.md&quot;,
+          &quot;/release/blogs/ChannelSnippets.md&quot;,
+          &quot;/release/blogs/ComponentActivation.md&quot;,
+          &quot;/release/blogs/ExecutionWorkflow.md&quot;,
+          &quot;/release/blogs/FreeText.md&quot;,
+          &quot;/release/blogs/GenericConceptsHighlight.md&quot;,
+          &quot;/release/blogs/MarkdownPatterns.md&quot;,
+          &quot;/release/blogs/NLLearning.md&quot;,
+          &quot;/release/blogs/PortableSnippets.md&quot;,
+          &quot;/release/blogs/RemoteDocsAgent.md&quot;,
+          &quot;/release/blogs/StatisicsAgent.md&quot;,
+          &quot;/release/blogs/SuperclassRender.md&quot;,
+          &quot;/release/blogs/TableOrdering.md&quot;,
+          &quot;/release/blogs/TaskManagement.md&quot;,
+          &quot;/release/blogs/WebpackAssets.md&quot;
+        ]
+      }
+    ],
+    &quot;nav&quot;: [
+      {
+        &quot;text&quot;: &quot;About&quot;,
+        &quot;link&quot;: &quot;/about/&quot;,
+        &quot;type&quot;: &quot;link&quot;,
+        &quot;items&quot;: []
+      },
+      {
+        &quot;text&quot;: &quot;Documentation&quot;,
+        &quot;link&quot;: &quot;/guide/LandingPage&quot;,
+        &quot;type&quot;: &quot;link&quot;,
+        &quot;items&quot;: []
+      },
+      {
+        &quot;text&quot;: &quot;Release Notes&quot;,
+        &quot;link&quot;: &quot;/release/ReleaseNotes&quot;,
+        &quot;type&quot;: &quot;link&quot;,
+        &quot;items&quot;: []
+      },
+      {
+        &quot;text&quot;: &quot;Use it now&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;Launch in Web&quot;,
+            &quot;link&quot;: &quot;https://eba.ibm.com/&quot;,
+            &quot;type&quot;: &quot;link&quot;
+          },
+          {
+            &quot;text&quot;: &quot;Download as App&quot;,
+            &quot;link&quot;: &quot;https://ibm.box.com/shared/static/m7wm02x2qdevpacf2u1ugj6koapr37ta.dmg&quot;,
+            &quot;type&quot;: &quot;link&quot;
+          },
+          {
+            &quot;text&quot;: &quot;Add to Slack&quot;,
+            &quot;link&quot;: &quot;https://slack.com/oauth/authorize?client_id=14390917878.401235455793&amp;scope=bot,users.profile:read&amp;redirect_uri=https%3a%2f%2feba.ibm.com%2fslack%2foauth&quot;,
+            &quot;type&quot;: &quot;link&quot;
+          }
+        ],
+        &quot;type&quot;: &quot;links&quot;
+      }
+    ]
+  }
+}</p></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/louisroehrs/eba-docs/edit/master/docs/about/Info.md" target="_blank" rel="noopener noreferrer">edit</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/eba-docs/assets/js/app.3403747c.js" defer></script><script src="/eba-docs/assets/js/29.2afef2db.js" defer></script>
+  </body>
+</html>
